@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+<!--        <Button-->
+<!--            android:id="@+id/ButtonBack"-->
+<!--            android:text="Chuyển về login"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/baseline_search_24"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext2"
+                android:height="40dp"
+                android:hint="Search"
+                android:paddingStart="8dp"
+                android:layout_height="wrap_content"/>
+            <!--        inputtext-->
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Trending"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="See all"
+                android:layout_height="wrap_content"/>
+            <!--        Trending and see all-->
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image1" />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:text="Europe"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:text="Russian warship: Moskva sinks in Black Sea"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Imgposter"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_people_alt_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:id="@+id/Poster"
+                    android:text="Công Tuyền"
+                    android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Imgtimer"
+                    android:layout_toEndOf="@+id/Poster"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_watch_later_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/Timer"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/Imgtimer"
+                    android:text="4h ago"
+                    android:layout_height="wrap_content"/>
+                <!--        Poster and timepost-->
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Latest"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="14dp"
+                android:text="See all"
+                android:layout_height="wrap_content"/>
+            <!--        Trending and see all-->
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
