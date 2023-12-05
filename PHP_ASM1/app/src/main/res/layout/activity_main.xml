@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
     <include layout="@layout/toolbar"/>
 
     <LinearLayout
@@ -58,16 +58,19 @@
             <!--        Trending and see all-->
         </RelativeLayout>
         <LinearLayout
+            android:id="@+id/linear"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:orientation="vertical">
             <ImageView
+                android:id="@+id/imgTrending"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:src="@drawable/image1" />
             <TextView
+                android:id="@+id/TvTopicId"
                 android:layout_marginTop="8dp"
                 android:textSize="13dp"
                 android:layout_width="match_parent"
@@ -77,6 +80,7 @@
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:layout_width="match_parent"
+                android:id="@+id/TvTopicTitle"
                 android:textStyle="bold"
                 android:text="Russian warship: Moskva sinks in Black Sea"
                 android:layout_height="wrap_content"/>
@@ -94,7 +98,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:textSize="14dp"
-                    android:id="@+id/Poster"
+                    android:id="@+id/tvPosterTreding"
                     android:text="Công Tuyền"
                     android:textColor="#000"
                     android:layout_centerVertical="true"
@@ -104,8 +108,8 @@
                 <ImageView
                     android:layout_marginLeft="4dp"
                     android:layout_width="wrap_content"
-                    android:id="@+id/Imgtimer"
-                    android:layout_toEndOf="@+id/Poster"
+                    android:id="@+id/tvTimerTreding"
+                    android:layout_toEndOf="@+id/tvPosterTreding"
                     android:layout_centerVertical="true"
                     android:layout_height="wrap_content"
                     android:src="@drawable/baseline_watch_later_24" />
@@ -115,11 +119,21 @@
                     android:layout_marginLeft="4dp"
                     android:id="@+id/Timer"
                     android:layout_centerVertical="true"
-                    android:layout_toEndOf="@+id/Imgtimer"
+                    android:layout_toEndOf="@+id/tvTimerTreding"
                     android:text="4h ago"
                     android:layout_height="wrap_content"/>
+
                 <!--        Poster and timepost-->
             </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="10dp"
+                android:textColor="#8F9193"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/TrendingSeen"
+                android:layout_gravity="end"
+                android:text="4h ago"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
         <RelativeLayout
             android:layout_marginTop="8dp"

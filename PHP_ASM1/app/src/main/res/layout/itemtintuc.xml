@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:padding="8dp"
+    android:padding="6dp"
     android:layout_marginBottom="4dp"
     android:layout_height="wrap_content">
         <ImageView
@@ -29,9 +29,9 @@
                 android:text="Ukraine's President Zelensky to BBC: Blood money being paid..."
                 android:layout_height="wrap_content"/>
             <RelativeLayout
-                android:layout_marginTop="4dp"
+                android:padding="2dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:foregroundGravity="">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -67,5 +67,14 @@
                     android:layout_height="wrap_content"/>
                 <!--        Poster and timepost-->
             </RelativeLayout>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:textSize="10dp"
+                android:text="4h ago"
+                android:textColor="#8F9193"
+                android:id="@+id/itemSeen"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"/>
         </LinearLayout>
 </LinearLayout>

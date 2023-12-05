@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DetailNews">
+    <include layout="@layout/toolbarprofile"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/avatarDetail"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textPosterDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BBC News"
+                android:textColor="#000"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/textCreatedAtDetail"
+                android:text="14m ago"
+                android:textSize="14dp"
+                android:textColor="#4E4B66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="90dp"
+            android:src="@drawable/image1"
+            android:text="Follow"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/postImage"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/image1"/>
+        <TextView
+            android:id="@+id/textTopicDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#4E4B66"
+            android:text="Europe"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollDetail">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/textDetail1"
+                android:textColor="#000"
+                android:text=""/>
+            <TextView
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:id="@+id/textDetail2"
+                android:textColor="#4E4B66"
+                android:text=""/>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:src="@drawable/baseline_thumb_up_24"
+            android:layout_height="24dp"/>
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4E4B66"
+            android:layout_marginLeft="4dp"
+            android:text="24.5K"/>
+
+        <ImageView
+            android:layout_marginLeft="29dp"
+            android:layout_width="24dp"
+            android:src="@drawable/baseline_comment_24"
+            android:layout_height="24dp"/>
+        <TextView
+            android:layout_weight="0.9"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4E4B66"
+            android:layout_marginLeft="4dp"
+            android:text="1K"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:src="@drawable/baseline_bookmark_24"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
     <include layout="@layout/toolbarprofile"/>
 
     <LinearLayout
@@ -64,6 +64,20 @@
             android:hint="Nhập"
             android:textSize="12dp"
             android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="8dp"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+        <EditText
+            android:id="@+id/edtNameReg"
+            android:hint="Nhập"
+            android:textSize="12dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/edittext_background"

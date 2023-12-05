@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProfileActivity">
+    tools:context=".activities.ProfileActivity">
 
     <include layout="@layout/toolbarprofile"/>
     <LinearLayout
@@ -17,23 +17,11 @@
 
     <ImageView
         android:layout_width="150dp"
+        android:id="@+id/avatar"
         android:layout_gravity="center"
         android:layout_height="150dp"
         android:layout_marginBottom="16dp"
         android:background="@color/cardview_dark_background"/>
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username" />
-    <EditText
-        android:id="@+id/edtUsernameProfile"
-        android:layout_width="match_parent"
-        android:textSize="12dp"
-        android:inputType="none"
-        android:paddingStart="8dp"
-        android:background="@drawable/edittext_background"
-        android:layout_height="48dp"/>
     <TextView
         android:layout_marginTop="8dp"
         android:id="@+id/textView2"
@@ -62,27 +50,13 @@
         android:paddingStart="8dp"
         android:background="@drawable/edittext_background"
         android:layout_height="48dp"/>
-    <TextView
-        android:layout_marginTop="8dp"
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Phone Number" />
-    <EditText
-        android:id="@+id/edtPhoneProfile"
-        android:paddingStart="8dp"
-        android:layout_width="match_parent"
-        android:textSize="12dp"
-        android:inputType="none"
-        android:background="@drawable/edittext_background"
-        android:layout_height="48dp"/>
     </LinearLayout>
-    <Button
-        android:id="@+id/btnUpdateProfile"
-        android:text="Update"
-        android:layout_margin="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+<!--    <Button-->
+<!--        android:id="@+id/btnUpdateProfile"-->
+<!--        android:text="Update"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
 
 
